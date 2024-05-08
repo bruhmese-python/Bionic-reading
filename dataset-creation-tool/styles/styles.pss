@@ -1,0 +1,102 @@
+color1 = [#e5e2d5, #ccc6ab, #999480, #666355, #33312a];
+color2 = [#e5e2d5, #ccc6ab, #999480, #666355, #33312a];
+color3 = [#e5e2d5, #ccc6ab, #999480, #666355, #33312a];
+color4 = [#e5e2d5, #ccc6ab, #999480, #666355, #33312a];
+color5 = [#e5e2d5, #ccc6ab, #999480, #666355, #33312a];
+
+.bold_text{
+	font-weight: bold;
+}
+.container {  
+	display: grid;
+  	grid-template-columns: 0.6fr 1.4fr 1fr;
+  	grid-template-rows: 0.8fr 1.2fr 1fr;
+  	gap: 0 10px;
+  	grid-auto-flow: row;
+  	grid-template-areas:
+  	  "words_list . output_preview"
+  	  "words_list work_area output_preview"
+  	  "words_list . output_preview";
+
+  	height : 100vh;
+  	margin:20px;
+}
+
+.words_list { 
+	grid-area: words_list;
+	color: color4;  
+	border: 1px solid color3;
+	border-radius:5px;
+	padding:5px;
+	overflow: auto;
+}
+
+.work_area {  
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 1fr;
+  	gap: 0px 0px;
+  	grid-auto-flow: row;
+  	grid-template-areas:
+  	  "display_area display_area display_area"
+  	  "click_area click_area click_area";
+  	grid-area: work_area;
+
+  	color: color5;
+  	background-color: color2;
+  	border-radius:5px;
+  	font-size:1.5em;
+        user-select: none; 
+}
+
+.click_area { 
+	padding:50px;
+	text-align: center; 
+	grid-area: click_area;
+}
+
+.display_area { 
+	padding:50px;
+	text-align: center;	  
+	grid-area: display_area;
+	border-bottom: 1px solid color3;
+}
+
+.output_preview {  
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 1fr 1fr 1fr;
+  	gap: 0px 0px;
+  	grid-auto-flow: row;
+  	grid-template-areas:
+  	  "words_preview bold_preview"
+  	  "words_preview bold_preview"
+  	  "words_preview bold_preview";
+  	grid-area: output_preview;
+  	color: color4;
+  	border: 1px solid color3;
+  	border-radius:5px;
+}
+
+.words_preview { 
+	grid-area: words_preview;
+	border-right: 1px solid color3;
+	padding:5px;
+	overflow: auto;
+}
+
+.bold_preview { 
+	grid-area: bold_preview; 
+	padding:5px;
+	overflow: auto;
+}
+
+.body{
+	padding:20px;
+	background-color:color1;
+}
+
+.selected{
+  	background-color: color5;
+  	color: color2;
+}

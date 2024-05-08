@@ -1,0 +1,27 @@
+#!/usr/local/bin/smsh
+import utils
+import gui
+
+clear file and ENV cache:
+	rm output.html
+	echo > ENV
+
+display on webpage:
+	#backslash in graph for pflow's sake
+	echo "<html><body>$(vexport %args%)</body></html>" > output.html
+	exo-open --launch WebBrowser output.html &
+
+#if python3 &
+run python model on:
+	python3 ./test_model.py "$(vexport %args%)"
+
+call api ?=:
+	run python model on %args%
+
+# __main__
+clear file and ENV cache
+get user input USER_INPUT
+call api ?= USER_INPUT
+display on webpage RENDERED_TEXT
+
+# ✅
