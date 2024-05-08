@@ -1,4 +1,4 @@
-# Bionic Reading Python Notebook
+# Bionic Reading
 
 This Python notebook implements a bionic reading technique that enhances reading speed and comprehension using machine learning. The notebook utilizes Markdown syntax to format the output text, emphasizing the initial characters of words to facilitate rapid reading.
 
