@@ -6,7 +6,7 @@ This Python notebook implements a bionic reading technique that enhances reading
 
 - **Bionic Reading**: Present text in a bionic reading format, where the initial characters of words are highlighted to aid in rapid reading.
 - **Machine Learning**: Utilize machine learning techniques to preprocess and format text for bionic reading.
-- **Customizable**: Easily train the model using the dataset creation tool bundled with the repo. Adjustable parameters.
+- **Customizable**: Easily train the model using the [dataset creation tool](https://bruhmese-python.github.io/Bionic-reading/dataset-creation-tool/index.html) bundled with the repo. Adjustable parameters.
 - **Markdown Output**: Output the formatted text using Markdown syntax for seamless integration with various platforms and applications.
 
 ## Getting Started
