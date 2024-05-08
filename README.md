@@ -37,7 +37,7 @@ This Python notebook implements a bionic reading technique that enhances reading
 ## Example
 
 ```markdown
-This is an **example** of bionic reading **output**. It highlights the initial characters of **words** to facilitate rapid **reading** and comprehension.
+**"Do** **No**t **Ente**r." **The** **si**gn **ma**de **i**t **clea**r **tha**t **the**y **didn**t **wa**nt **anyo**ne **arou**nd. 
 ```
 
 ## Contributing
